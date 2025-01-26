@@ -96,6 +96,8 @@ import adminrouter from './Router/adminroute.js';
 app.use('/api/v1/admin', adminrouter);
 import orderrouter from './Router/orderroute.js';
 app.use('/api/v1/orders', orderrouter);
+import check from './Router/check.js';
+app.use('/api/v1/check', check);
 
 import path from 'path';
 import { fileURLToPath } from 'url';
