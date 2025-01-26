@@ -76,7 +76,7 @@ const port = config.PORT || 3000;
 
 import cors from 'cors';
 app.use(cors({
-    origin: ["https://fronted-xi.vercel.app",], // Allow both production and local
+    origin: "https://fronted-xi.vercel.app", // Allow both production and local
     methods: ["POST", "PUT", "DELETE", "GET"],
     credentials: true, // Allow credentials
 }));
