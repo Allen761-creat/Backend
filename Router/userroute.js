@@ -4,8 +4,6 @@ import { requiredLoggedIn } from '../Middlewares/AuthMiddelware.js';
 import {upload} from '../Configuration/multerconfig.js'
 const router =express.Router();
 
-
-
 router.post("/presignup", presignup)
 router.post("/signup",signup)
 router.post("/login",login)
