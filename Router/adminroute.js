@@ -4,7 +4,7 @@ import { CheckAdmin, requiredLoggedIn } from '../Middlewares/AuthMiddelware.js'
 const router= express.Router()
 import {upload} from '../Configuration/multerconfig.js'
 // requiredLoggedIn,CheckAdmin,
-router.get('/',fetchusers)
+router.get('/users',requiredLoggedIn,CheckAdmin ,fetchusers)
 router.put('/status',requiredLoggedIn,CheckAdmin,blockandunblock)
 router.post('/deleteuser',requiredLoggedIn,CheckAdmin,deleteUser)
 router.get('/user/:id',requiredLoggedIn,CheckAdmin,fetchuserbyid)
