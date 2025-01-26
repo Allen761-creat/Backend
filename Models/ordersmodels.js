@@ -17,11 +17,7 @@ email:{
     required: true,
     ref:'user'
 },
-// phone: {
-//     type: String,
-//      required: true,
-//       ref:'user'
-//     },
+
 oderitems:[
     {
        title:{
