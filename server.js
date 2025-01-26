@@ -79,6 +79,7 @@ app.use(cors({
     origin: "https://fronted-xi.vercel.app", // Allow both production and local
     methods: ["POST", "PUT", "DELETE", "GET"],
     credentials: true, // Allow credentials
+    allowedHeaders: ["Content-Type", "Authorization"], // Allow both Content-Type and Authorization headers
 }));
 import morgan from 'morgan';
 app.use(morgan("dev"));
