@@ -111,6 +111,15 @@ app.get('/', (req, res) => {
     });
 });
 
-// Export the express app as a serverless function for Vercel
+
+
+
+app.listen(port,()=>{
+    console.log(`Express Server is running on port ${port}`);
+});
+
+import DBConfig from './Configuration/dbconfig.js';
+DBConfig()
+
 export default app;
 
